@@ -1,0 +1,173 @@
+        /* Resect proterties start here */
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: #000000;
+            box-sizing: border-box;
+        }
+
+        /* Resect proterties end here */
+
+        /* css grid properties start here */
+        /* grid container start here */
+        .container {
+            width: 100%;
+            /* height: 100%; */
+            background-color: #d3cfcf;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 50px 211px 211px 155px;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        /* grid container end here */
+
+        /* grid item css properties start here */
+        .item {
+            background-color: #ffffff;
+        }
+
+        .item-5 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background: url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80") center center/cover;
+        }
+
+        /* grid item css properties start here */
+
+        /* css grid properties start here */
+
+        /* navigation bar css properties start here */
+        .item.item-1,
+        .item.item-2,
+        .item.item-3,
+        .item.item-4 {
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .item ul li {
+            list-style: none;
+            margin: 5px 1px;
+        }
+
+        .item ul li a {
+            text-decoration: none;
+            font-size: 17px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+
+        /* navigation bar css properties end here */
+
+        /* item-8 , item-9 , item-10 and item-11 css properites start here */
+        .social-media {
+            text-align: center;
+            font-size: 50px;
+            padding: 15px 0px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin: 10px 0px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0px;
+        }
+
+        /* item-8 , item-9 , item-10 and item-11 css properites end here */
+
+        /* item-6 and item-7 css properties start here */
+        .buy {
+            text-align: center;
+            padding: 25px 0px;
+        }
+
+        .buy h1 {
+            font-size: 18px;
+        }
+
+        .buy p {
+            font-size: 40px;
+        }
+
+        .buy button {
+            font-size: 16px;
+            height: 35px;
+            border: 2px solid transparent;
+            width: 90px;
+            color: #ffffff;
+            background-color: #000000;
+            cursor: pointer;
+        }
+
+        /* item-6 and item-7 css properties end here */
+
+
+        /* item-5 css properties start here */
+        .item-5 h1 {
+            font-size: 40px;
+            color: #ffffff;
+            margin-top: 135px;
+            margin-left: 30px;
+        }
+
+        .item-5 p {
+            font-size: 18px;
+            color: #ffffff;
+            margin-left: 30px;
+            margin-top: 0px;
+        }
+
+        .item-5 button {
+            margin-left: 30px;
+            height: 35px;
+            width: 90px;
+            color: #ffffff;
+            font-size: 16px;
+            border: 2px solid transparent;
+            background-color: #000000;
+            cursor: pointer;
+        }
+
+        /* item-5 css properties end here */
+
+        /* @media queries for Mobile start here */
+        @media screen and (max-width:600px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .item-5 {
+                height: 370px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                clear: both;
+                padding: 0px;
+            }
+
+            .item-6,
+            .item-7 {
+                height: 190px;
+            }
+
+            .item-8,
+            .item-9,
+            .item-10,
+            .item-11 {
+                height: 150px;
+            }
+
+        }
+        /* @media queries for Mobile end here */
