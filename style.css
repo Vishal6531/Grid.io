@@ -172,6 +172,7 @@
 
             .item-5 h1 {
                 margin-top: 0px;
+                font-size: 30px;
             }
 
             .item-5 p {
@@ -179,7 +180,7 @@
             }
 
             .item-5 button {
-                margin-top: 5px;
+                margin-top: 10px;
             }
 
         }
